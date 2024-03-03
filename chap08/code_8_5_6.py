@@ -33,7 +33,7 @@ def my_bm_search_text(text, pattern):
             t_idx -= 1
             p_idx -= 1
 
-        # テキスト側の照合するインデックスをスキップテーブルの値に基づいて取得する
+        # テキスト側の照合するインデックスをスキップテーブルの値に基づいて取得
         # ただし、スキップ後に位置が照合開始位置より左側になる場合はpattern_length - p_idxをスキップ数とする
         skip_num = max(skip_table.get(text[t_idx], pattern_length),
                        pattern_length - p_idx)

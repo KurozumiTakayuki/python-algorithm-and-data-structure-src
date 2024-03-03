@@ -5,7 +5,7 @@ def insertion_sort(my_list):
         # i番目の要素を操作対象として取り出す
         target = my_list[i]
 
-        # 操作対象の要素より小さい値を持つ要素が見つかるまで1つ右側にずらす操作を行う
+        # 操作対象の要素より小さい値を持つ要素が見つかるまで1つ右側にずらす
         j = i - 1
         while 0 <= j and target < my_list[j]:
             my_list[j + 1] = my_list[j]

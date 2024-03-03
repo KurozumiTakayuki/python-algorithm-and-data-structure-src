@@ -10,7 +10,7 @@ def merge(my_list, start_idx, mid_idx, end_idx):
     left_count = len(left_copy)
     right_count = len(right_copy)
 
-    # 左コピー、右コピーのそれぞれの0番目から順に比較し、小さいものを元のリストに設定
+    # 左コピー、右コピーそれぞれ0番目から順に比較し、小さいものを元のリストに設定
     while left_idx < left_count and right_idx < right_count:
         if left_copy[left_idx] <= right_copy[right_idx]:
             # 左側要素の要素が右側以下の場合（※ ここで、不等号にイコールが入っているため安定なソートとなる）

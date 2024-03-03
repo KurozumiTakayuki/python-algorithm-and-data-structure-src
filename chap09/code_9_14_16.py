@@ -39,7 +39,7 @@ def heap_sort(my_list):
     for start_idx in range(0, len(my_list) - 1):
         print(f"=========={start_idx}番目以降のヒープ化開始==========")
         heapify(my_list, start_idx)  # ← 引数追加
-        print(f"=========={start_idx}番目以降のヒープ化修了==========")
+        print(f"=========={start_idx}番目以降のヒープ化終了==========")
 
 
 data = [7, 6, 2, 3, 5, 4, 1]
